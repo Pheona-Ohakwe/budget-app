@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Aileron";
+  src: url("./assets/aileron.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Aileron", sans-serif;
+  background: #0b0317 !important;
+  color: #f6f5f7 !important;
+}
+
+/* Landing */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* LoginSignup */
+#login-signup {
+  text-align: center;
+  padding: 0 16px;
+}
+
+#login-signup .logo {
+  margin-top: 54px;
+}
+
+#login-signup .title {
+  margin: 133px 0 67px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+}
+
+#login-signup button {
+  display: block;
+  width: 100%;
+}
+
+.btn-login {
+  background-color: #fff !important;
+  margin-bottom: 16px;
+}
+
+.btn-green {
+  background-color: #56f0b8 !important;
+  color: #0c0b0c;
+}
+
+/* Shared sections */
+#login, 
+#signup, 
+#goal-setup, 
+#budget-setup, 
+#transactions, 
+#goals, 
+#settings {
+  padding: 88px 15px 60px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  margin: 24px 0;
+}
+
+.btn {
+  padding: 16px;
+  color: #0c0b0c;
+}
+
+input {
+  height: 44px !important;
+}
+
+.password {
+  margin-bottom: 24px;
+}
+
+.signup-link {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  color: #f6f5f7;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #f6f5f7 !important;
+  opacity: 0.25;
+  color: #0c0b0c;
+}
+
+.back {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+}
+
+/* Goals */
+.goals {
+  padding: 0 37.5px;
+  margin: 24px 0;
+}
+
+.goals .goal {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: #565cf0;
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
+.goals .goal .text {
+  font-size: 12px;
+}
+
+img[alt="Utilities"] {
+  width: 49px;
+  height: 48px;
+}
+
+.expense-item, 
+.goal-item, 
+.secondary-goal {
+  background-image: linear-gradient(to right, #9055f0, #565cf0);
+  border-radius: 8px;
+  height: 93px;
+}
+
+.expense-item .expense-icon {
+  width: 60%;
+}
+
+.expense-item .expense-input {
+  width: 147px;
+  height: 100%;
+}
+
+.expense-item .expense-input input {
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Budget Setup */
+#budget-setup button {
+  margin-top: 24px;
+}
+
+/* Spinner */
+#spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: translateY(-130px);
+}
+
+#remaining-balance {
+  color: #56f0b8;
+  font-family: "Aileron";
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 120px 0;
+}
+
+/* Goal Setup */
+.goalset-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 176px;
+  height: 115px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #9055f0 0%, #565cf0 100%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.goalset-icon {
+  width: 42px;
+  height: 44px;
+  margin: 16px 0 6px;
+}
+
+.goalset-text {
+  width: 148px;
+}
+
+.goal-amount, 
+.primary-amount, 
+.secondary-amount {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 8px;
+  outline: none;
+}
+
+p.custom-goal {
+  margin-top: 24px;
+  color: #f6f5f7;
+  font-size: 16px;
+}
+
+/* Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 34px;
+}
+
+.nav-text {
+  font-family: "Aileron";
+  font-style: normal;
+  text-decoration: none;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+}
+
+/* Dashboard */
+#dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 70px 15px 24px;
+  text-align: left;
+  min-height: 100vh;
+}
+
+.logout {
+  position: absolute;
+  top: 56px;
+  right: 24px;
+}
+
+/* Chart */
+#chart-container {
+  position: relative;
+}
+
+#chart-container label {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 34px;
+  color: #56f0b8;
+  font-weight: 700;
+}
+
+/* Transactions */
+#transactions, 
+#goals, 
+#settings {
+  display: flex;
+  flex-direction: column;
+  min-height: 87vh;
+}
+
+.transaction-summary, 
+.transaction-final {
+  background-image: linear-gradient(to right, #9055f0, #565cf0);
+  border-radius: 8px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+#goal-input-modal {
+  width: 100%;
+}
+
+.list-group-item {
+  color: #fff !important;
+  background-color: transparent !important;
+}
